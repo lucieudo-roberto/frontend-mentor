@@ -11,26 +11,29 @@
         <link rel="icon" href="res/favicon.png"/>
     </head>
     <body>
-        <section id="card">
-            <figure id="card-image-box">
-                <img class="card-image" src="res/product_desktop.jpg" alt="big picture of a perfume" id="card-image-desktop"/>
-                <img class="card-image" src="res/product_mobile.jpg" alt="small picture of a perfume"  id="card-image-mobile"/>
-            </figure>
-            <div id="card-content">
-                <h1 id="card-title">
-                    <span id="card-span">perfume</span>
+        <section class="card">
+            <picture class="card-image-box">
+            	<source media="(max-width:599px)" srcset="res/product_mobile.jpg"/>
+            	<source media="(min-width:600px)" srcset="res/product_desktop.jpg"/>
+                <img class="card-image" src="res/product_mobile.jpg" alt="Photo perfume and leaves">
+            </picture>
+            
+            <div class="card-box-content">
+                <h1 class="card-content-title card-content">
+                    <span class="card-content-uptitle card-content">perfume</span>
                     Gabrielle Essence Eau De Parfum
                 </h1>
-                <p id="card-desc">
+                <p class="card-describle card-content">
                     A floral, solar and voluptuous interpretation composed by Olivier Polge, 
                     Perfumer-Creator for the House of CHANEL.
                 </p>
-                <label id="card-price"> $149.99 <span id="old-price">$169.99</span> </label>
-                <button id="card-button">Add to Cart</button>
+                <label class="card-price card-content"> $149.99 <span class="old-price">$169.99</span> </label>
+                <button class="card-button">Add to Cart</button>
             </div>
         </section>
+        
         <footer>
-            <span id="copy"> por lucieudo-roberto, from frontendmentor.io</span>
+            <h6 class="copy"> por lucieudo-roberto, from frontendmentor.io</h6>
         </footer>
     </body>
 </html>
