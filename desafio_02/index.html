@@ -5,40 +5,52 @@
         <title></title>
         <meta name="viewport" content="width=device-width"/>
         <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="css/reset.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body>
         <main class="main-container">
+
             <div class="card-box">
-                <div class="card card_front">
-                    <image class="card-logo" src="" alt="credit cart logo company"/>
+                <div class="card card-front">
+                    <image class="card-logo" src="res/card-logo.svg" alt="credit cart logo company"/>
                     <span class="card-number">0000 0000 0000 0000</span>
-                    <span class="card-name">jana appleseed <span class="card-date"></span></span>
+                    <span class="card-name">jana appleseed <span class="card-date">09/00</span></span>
                 </div>
-                <div class="card card_back">
+                <div class="card card-back">
                     <span class="card-cvc">000</span>
                 </div>
             </div>
             
-            <form action="" method="" class="card-data-form">
-                <label class="form-label">
-                    cardholder name <input type="text" placeholder="e.g Jane Appleseed" class="form-data-input">
-                </label>
-                <label class="form-label">
-                    card number <input type="number" placeholder="e.g 1234 5678 9123 0000" class="form-data-input">
-                </label>
-               <div class="form-more">
-                   <label class="form-data-input">
-                       exp, data [mm/yy]
-                       <input type="number"> <input type="number">
-                   </label>
-                    <label class="form-data-input">
-                        cvc <input type="number">
-                   </label>
-               </div>
-                <input type="button" class="form-send-bnt" value="confirm"/>
+            <form class="card-form">
+                <div class="form-main">
+                    <div class="form-input-box">
+                        <label for="" class="form-label">cardholder name </label>
+                        <input type="text" placeholder="e.g Jane Appleseed" class="form-input">
+                    </div>
+                    <div class="form-input-box">
+                        <label class="form-label">card number</label> 
+                        <input type="text" placeholder="e.g 1234 5678 9123 0000" class="form-input">
+                        <span class="form-error-text">Wrong format, numbers only</span>
+                    </div>
+                   <div class="forma-date-box">
+                        <div class="form-input-box">
+                            <label class="form-label">exp.date (mm/yy)</label>
+                            <input type="number" placeholder="MM" class="form-input form-input-number">
+                            <input type="number" placeholder="YY" class="form-input form-input-number">
+                            <span class="form-error-text">Can't be blank</span>
+                        </div>
+                        <div class="form-input-box">
+                            <label class="form-label">cvc</label>
+                            <input type="number" placeholder="e.g 123" class="form-input form-input-number form-cvc">
+                            <span class="form-error-text">Can't be blank</span>
+                        </div>
+                   </div>
+                    <input type="button" class="form-send-bnt" value="Confirm"/>
+                </div>
             </form>
 
-            <section class="form-susess-window">
+            <section class="form-sucess-window" style="display:none">
                 <image src=""/>
                 <h1>thank you</h1>
                 <p>We've added your card details</p>
