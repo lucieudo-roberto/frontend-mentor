@@ -180,7 +180,7 @@ html, body {
 
 .sucess-box {
     text-align: center;
-    display: block;
+    display: none;
     width: 70%;
     margin-top: 30%;
     margin-left: 4%;
@@ -234,7 +234,6 @@ html, body {
             .card-label-cvc{font-size: 4vw; top: 20vw;}
         
         .form-box {
-            display: block;
             width: 100%; height: auto;
             margin-top: 20vw;
         }
@@ -242,12 +241,12 @@ html, body {
             .form-label {margin-top: 3%; font-size: 3.2vw;}
             .form-input {padding: 4vw;font-size: 3.4vw;}
             .form-input::placeholder {font-size: 3vw;}
-            .send-button {padding: 4vw;font-size: 3.3vw;margin-top:20%}
-
+            .send-button {padding: 4vw;font-size: 3.3vw;margin-top:15%}
+            .form-error{font-size: 3vw; margin: 1% 0;}
 
         .sucess-box {
             width: 90%;
-            margin: 10% auto 1% auto;
+            margin: 36% auto 1% auto;
         }
             .sucess-image{width: 25%;}
             .sucess-box h1{font-size: 9.3vw;}
