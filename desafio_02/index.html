@@ -3,7 +3,9 @@
 <html lang="en">
     <head>
         <title>Frontend Mentor | Interactive card details form </title>
-        <meta name="viewport" content="width=device-width" charset="UTF-8"/>
+
+        <meta name="viewport" content="width=device-width"/>
+        <meta charset="UTF-8">
         <meta name="describle" content="card Interactive page">
         <link rel="icon" type="image/png" sizes="32x32" href="/res/favicon-32x32.png">
         <link rel="stylesheet" href="css/reset.css"/>
@@ -34,20 +36,20 @@
                     </div>
                     <div class="form-input-box">
                         <label class="form-label" for="card-number">card number</label>
-                        <input class="form-input" type="tel"  pattern="[0-9]" id="card-number" placeholder="e.g 1234 5678 9123 0000">
+                        <input class="form-input" type="tel" id="card-number" placeholder="e.g 1234 5678 9123 0000">
                         <span class="form-error card-number-error">Wrong format, numbers only</span>
                     </div>
                     
                     <div class="form-grid">
                         <div class="form-grid-child">
                             <label class="form-label" for="card-date">exp.date &nbsp;(mm/yy)</label>
-                            <input class="form-input grid-input" type="tel" id="card-date" placeholder="MM" min="1">
-                            <input class="form-input grid-input" type="tel" id="card-year" placeholder="YY" min="10">
+                            <input class="form-input grid-input" type="tel" id="card-date" placeholder="MM">
+                            <input class="form-input grid-input" type="tel" id="card-year" placeholder="YY">
                             <span class="form-error card-date-error">Can't be blank</span>
                         </div>
                         <div class="form-grid-child">
                             <label class="form-label" for="card-cvc">cvc</label>
-                            <input class="form-input cvc-input" type="tel" id="card-cvc" placeholder="e.g 123" max="999">
+                            <input class="form-input cvc-input" type="tel" id="card-cvc" placeholder="e.g 123">
                             <span class="form-error card-cvc-error">Can't be blank</span>
                         </div>
                     </div>
@@ -65,6 +67,6 @@
                 <button class="sucess-button">Continue</button>
             </section>
         </div>
-        <script type="text/javascript" src="src/main.js"></script>
+        <script src="src/main.js"></script>
     </body>
 </html>
