@@ -3,7 +3,6 @@
 <html lang="en">
     <head>
         <title>Frontend Mentor | Interactive card details form </title>
-
         <meta name="viewport" content="width=device-width"/>
         <meta charset="UTF-8">
         <meta name="describle" content="card Interactive page">
@@ -13,7 +12,7 @@
     </head>
     <body>
         <div class="card-container">
-            <section class="card-box">
+            <div class="card-box">
                 <div class="card card-front">
                     <img class="card-logo-img" src="res/card-logo.svg" alt="card logo image"/>
                     <label class="card-label-number" for="card-number">0000 0000 0000 0000</label>
@@ -25,9 +24,9 @@
                 <div class="card card-back">
                     <label class="card-label-cvc" for="card-cvc">000</label>
                 </div>              
-            </section>
+            </div>
 
-            <section class="form-box" >
+            <div class="form-box" >
                 <form class="form-1">
                     <div class="form-input-box">
                         <label class="form-label" for="card-name">cardholder name </label>
@@ -56,16 +55,16 @@
                     
                     <input type="button" class="send-button" id="submit-bnt" value="Confirm"/>
                 </form>
-            </section>
+            </div>
 
-            <section class="sucess-box" style="display: none;">
+            <div class="sucess-box" style="display: none;">
                 <img class="sucess-image" src="res/icon-complete.svg" alt="is ok, image"/>
                 <h1>thank you</h1>
                 <p class="sucess-info-message">
                     We've added your car details 
                 </p>
                 <button class="sucess-button">Continue</button>
-            </section>
+            </div>
         </div>
         <script src="src/main.js"></script>
     </body>
