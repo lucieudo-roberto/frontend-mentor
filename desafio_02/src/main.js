@@ -7,9 +7,8 @@ let CardFunctions = {
     printUserNameInCard : () =>{
         let card_input  = document.querySelector("#card-name").value;
         let card_output = document.querySelector(".card-label-name");
-        if (card_input.length > 0 ) {
-            card_output.innerText = card_input.toUpperCase()
-        }
+
+        if (card_input.length > 0 ) card_output.innerText = card_input.toUpperCase();
     },
     
     printCardNumberInCard: (event) => {
@@ -42,8 +41,7 @@ let CardFunctions = {
         let card_input_month = document.querySelector("#card-date")
         let card_input_years = document.querySelector("#card-year")
         let card_output = document.querySelector(".card-label-date")
-        let month = ""
-        let years = ""
+        let month = ""; let years = ""
         
         if ( card_input_month.value.length < 3 ) {
             month += card_input_month.value
@@ -66,13 +64,19 @@ let CardFunctions = {
         let card_month = document.getElementById("card-date")
         let card_years = document.getElementById("card-year")
         let card_cvc = document.getElementById("card-cvc")
+        let status = 0;
         
-        if (card_number.value.length < 19 ) document.querySelector(".card-number-error").style.display = "block";
-        if (card_name.value.length < 1 ) document.querySelector(".card-name-error").style.display = "block";
-        if (card_month.value.length <= 0 ) document.querySelector(".card-date-error").style.display = "block";
-        if (card_years.value.length <= 0 ) document.querySelector(".card-date-error").style.display = "block";
-        if (card_cvc.value.length <= 0 ) document.querySelector(".card-cvc-error").style.display = "block";
-    
+        if (card_number.value.length < 19 ){document.querySelector(".card-number-error").style.display = "block"; status +=1;}
+        if (card_name.value.length  < 5 ) {document.querySelector(".card-name-error").style.display = "block"; status +=1;}
+        if (card_month.value.length <= 0 ){document.querySelector(".card-date-error").style.display = "block"; status +=1;}
+        if (card_years.value.length <= 0 ){document.querySelector(".card-date-error").style.display = "block"; status +=1;}
+        if (card_cvc.value.length   <= 0 ){document.querySelector(".card-cvc-error").style.display = "block"; status +=1;}
+
+
+        if (status == 0 ) {
+            document.querySelector(".form-box").style.display = "none"
+            document.querySelector(".sucess-box").style.display = "block"
+        }
     }
 }
 
