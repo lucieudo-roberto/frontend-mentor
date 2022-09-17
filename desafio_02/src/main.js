@@ -66,11 +66,31 @@ let CardFunctions = {
         let card_cvc = document.getElementById("card-cvc")
         let status = 0;
         
-        if (card_number.value.length < 19 ){document.querySelector(".card-number-error").style.display = "block"; status +=1;}
-        if (card_name.value.length  < 5 ) {document.querySelector(".card-name-error").style.display = "block"; status +=1;}
-        if (card_month.value.length <= 0 ){document.querySelector(".card-date-error").style.display = "block"; status +=1;}
-        if (card_years.value.length <= 0 ){document.querySelector(".card-date-error").style.display = "block"; status +=1;}
-        if (card_cvc.value.length   <= 0 ){document.querySelector(".card-cvc-error").style.display = "block"; status +=1;}
+        if (card_number.value.length < 19 ){
+            document.querySelector(".card-number-error").style.display = "block"; 
+            status +=1;
+            card_number.style.borderColor = "red"
+        }
+        if (card_name.value.length  < 5 ) {
+            document.querySelector(".card-name-error").style.display = "block"; 
+            status +=1;
+            card_name.style.borderColor = "red"
+        }
+        if (card_month.value.length <= 0 ){
+            document.querySelector(".card-date-error").style.display = "block"; 
+            status +=1;
+            card_month.style.borderColor = "red"
+        }
+        if (card_years.value.length <= 0 ){
+            document.querySelector(".card-date-error").style.display = "block"; 
+            status +=1;
+            card_years.style.borderColor = "red"
+        }
+        if (card_cvc.value.length <= 0 ){
+            document.querySelector(".card-cvc-error").style.display = "block"; 
+            status +=1;
+            card_cvc.style.borderColor = "red"
+        }
 
 
         if (status == 0 ) {
