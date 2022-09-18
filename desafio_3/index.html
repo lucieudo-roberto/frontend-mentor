@@ -2,9 +2,13 @@
 
 <html lang="en">
 	<head>
-		<title></title>
-		<meta name="viewport" content="device-width,initial-scale=1"/>
+		<title>Frontend Mentor | Four card feature section</title>
 		<meta charset="UTF-8"/>
+		<meta name="viewport" content="device-width,initial-scale=1"/>
+		<meta name="describle" content="four card page">
+		<link rel="icon" href="res/favicon-32x32.png"/>
+		<link rel="stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
 	</head>
 	<body>
 		<header class="header-box">
@@ -15,30 +19,31 @@
   			 to ensure that your project is successful
 			</p>
 		</header>
-		<main class="main-box">
-			<section class="card">
-				<span class="card-title"></span>
-				<p class="card-desc"></p>
-				<figure class="card-figure-box"><img src="" class="card-image" alt=""></figure>
-			</section>
-			<section class="card">
-				<span class="card-title"></span>
-				<p class="card-desc"></p>
-				<figure class="card-figure-box"><img src="" class="card-image" alt=""></figure>
-			</section>
-		    <section class="card">
-				<span class="card-title"></span>
-				<p class="card-desc"></p>
-				<figure class="card-figure-box"><img src="" class="card-image" alt=""></figure>
-			</section>
-			<section class="card">
-				<span class="card-title"></span>
-				<p class="card-desc"></p>
-				<figure class="card-figure-box"><img src="" class="card-image" alt=""></figure>
-			</section>
-		    
-		</main>	
+		<main class="main-grid-1">
+			<div class="card card-1">
+				<span class="card-title">Supervisor</span>
+				<p class="card-desc">Monitors activity to identify project roadblocks</p>
+				<img src="res/supervisor.svg" class="card-image" alt="">
+			</div>
+           <div class="not-used">
+				<div class="card card-2">
+					<span class="card-title">Team Builder</span>
+					<p class="card-desc">Scans our talent network to create the optimal team for your project</p>
+					<img src="res/team-builder.svg" class="card-image" alt="">
+				</div>
 
+				<div class="card card-3">
+					<span class="card-title">Karma</span>
+					<p class="card-desc">Regularly evaluates our talent to ensure quality</p>
+					<img src="res/karma.svg" class="card-image" alt="">
+				</div>
+			</div>
+			<div class="card card-4">
+				<span class="card-title">Calculator</span>
+				<p class="card-desc">Uses data from past projects to provide better delivery estimates</p>
+				<img src="res/calculator.svg" class="card-image" alt="">
+			</div>
+		</main>	
 	</body>
 </html>
 
