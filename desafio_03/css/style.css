@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
-body{
-    background-color:  #fafafa;
-}
+body{background-color:  #fafafa;}
+
 .header-box {
     display: block;
     width: 100%;
@@ -46,7 +45,7 @@ h1 {
     box-shadow: 0px 5px 10px #cecece;
     width: 90%;
     border-radius: 10px;
-    height: 230px;
+    height: 17vw;
     margin: auto auto;
     background-color: #fafafa;
 }
@@ -66,7 +65,7 @@ h1 {
 }
 
 .card-desc {
-    font: 400 1rem/1.5 'Poppins',sans-serif;
+    font: 400 1.1vw/1.5 'Poppins',sans-serif;
     margin: 4% auto;
     color: #a3a5ae;
 }
@@ -80,11 +79,7 @@ h1 {
 }
 
 @media(max-width: 623px) {
-    h1,h2 {
-        width: 100%;
-        font-size: 7vw;
-    }
-    
+    h1,h2 { width: 100%; font-size: 7vw;}
     h1{margin: 5% 0 2% 0;}
 
     .header-desc{
