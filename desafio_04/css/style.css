@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+
+body {
+	font-family: 'Karla', sans-serif;
+	font-size: 17px;
+	background-color: #e5eff5;
+}
+
+
+.main-box {
+	display: flex;
+	flex-wrap: wrap;
+	margin:  10% auto;
+	width: min(720px,95%);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.head-section {width: 100%;background: #fafafa; padding: 4% 10%;}
+	h1{font-size: 1.4rem; font-weight: 700; color:#2ab2af; margin-bottom: 4%;}
+	h2{font-size: 1.1rem; font-weight: 700; color:#c0df34; margin-bottom: 3%;}
+	
+	.head-section-desc {
+		display: block;
+		margin-top: 3%;
+		width: 100%;
+		color: #98a6bd;
+		font-size: 1rem;
+		line-height: 1.8;
+	}
+
+.subscript-section{width: 50%; background-color: #2ab2af; padding: 5%;}
+	h3{font-size: 1rem;color: #fafafa;}
+	
+	.product-price {
+		display: block;
+		width: 100%;
+		font-size: 2.1rem;
+		font-weight: 700;
+		color: #f4f4f4;
+		margin-top: 4%;
+	}
+
+	.month-text {
+		vertical-align: middle;
+		font-size: 1.1rem; 
+		font-weight: 400;
+		color: #c0c0c0;
+	}
+
+	.more-price-info {
+		display: block;
+		width: 100%;
+		font-size: 1rem;
+		color: #f4f4f4;
+		font-weight: 400;
+		margin-top: 2%;
+	}
+
+	.singup-bnt{
+		display: block;
+		width: 100%;
+		border: 1px solid #c0df34;
+		padding: 4%;
+		background-color: #c0df34;
+		color: #fafafa;
+		border-radius: 5px;
+		font-size: 1.1rem;
+		font-weight: 700;
+		margin-top: 11%;
+	}
+
+
+.whay-section{width: 50%; padding: 5%; background-color: greenyellow;}
+	h4{font-size: 1rem;color: #fafafa;}
+	.whay-desc {
+		width: 90%;
+		font-size: 1rem;
+		line-height: 1.5;
+		color: #fafafa;
+		margin: 5% 0;
+	}
