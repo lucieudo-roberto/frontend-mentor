@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
 body{
-    background-color:  #a3a5ae;
+    background-color:  #fafafa;
 }
 .header-box {
     display: block;
@@ -28,6 +28,7 @@ h1 {
     margin: 1% auto 0 auto;
     text-align: center;
     font: 200 .9vw/2 'Poppins',sans-serif;
+    color:  #4c4e61;
 }
 
 .main-grid-1 {
@@ -42,7 +43,7 @@ h1 {
     position: relative;
     display: block;
     border: 1px solid #fff;
-    box-shadow: 1px 2px 3px #000;
+    box-shadow: 0px 5px 10px #cecece;
     width: 90%;
     border-radius: 10px;
     height: 230px;
@@ -59,13 +60,13 @@ h1 {
     display: block;
     width: 80%;
     text-align: left;
-    font: 400 1.1rem/1 'Poppins',sans-serif;
-    margin: 6% auto;
+    font: 600 1.3vw/1 'Poppins',sans-serif;
+    margin: 10% auto 5% auto;
     color:  #4c4e61;
 }
 
 .card-desc {
-    font: 200 1rem/1.5 'Poppins',sans-serif;
+    font: 400 1rem/1.5 'Poppins',sans-serif;
     margin: 4% auto;
     color: #a3a5ae;
 }
@@ -80,19 +81,22 @@ h1 {
 
 @media(max-width: 623px) {
     h1,h2 {
-        color: red; width: 100%;
-        font-size: 1.3rem;
+        width: 100%;
+        font-size: 7vw;
     }
     
-    h1{margin-top: 10%;}
+    h1{margin: 5% 0 2% 0;}
 
     .header-desc{
-        width: 80%; font-size: .9rem; 
+        width: 80%; font-size: 3.3vw; 
         line-height: 1.5; text-align: justify;
         margin: 5% auto;
     }
-
+    .main-grid-1{width: 100%;}
+    .card{width: 80%; height: 330px;}
+    .card-title{font-size: 4.3vw;}
+    .card-desc{font-size: 3.8vw;}
     .main-grid-1 {display: block;}
     .card {margin: 5% auto;}
-    .card-3{margin-top: 10%;}
+    .card-3{margin-top: 5%;}
 }
