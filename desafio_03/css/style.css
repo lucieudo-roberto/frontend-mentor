@@ -42,7 +42,7 @@ h1 {
     position: relative;
     display: block;
     border: 1px solid #fff;
-    box-shadow: 0px 5px 10px #cecece;
+    box-shadow: 1px 1px 15px 5px rgba(0,0,0,.10);
     width: 90%;
     border-radius: 10px;
     height: 17vw;
