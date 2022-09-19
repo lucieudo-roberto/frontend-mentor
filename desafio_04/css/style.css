@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
 body {
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 	font-family: 'Karla', sans-serif;
 	font-size: 17px;
 	background-color: #e5eff5;
@@ -10,7 +16,6 @@ body {
 .main-box {
 	display: flex;
 	flex-wrap: wrap;
-	margin:  10% auto;
 	width: min(720px,90%);
 	border-radius: 10px;
 	overflow: hidden;
