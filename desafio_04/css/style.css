@@ -79,13 +79,13 @@ body {
 		margin: 5% 0;
 	}
 
-@media(max-width:512px) {
+@media(max-width:612px) {
     .main-box{flex-direction: column; margin-top: 5%;}
     
     .head-section,
     .subscript-section,
     .whay-section{width: 100%; padding: 10% 10% 5% 10%;}
-    
+    .singup-bnt{margin-bottom: 5%;}
     h1{font-size: 2.1rem; margin-bottom: 5%;}
     h2{font-size: 1.3rem; margin-bottom: 5%;}
     h3{font-size: 1.5rem; margin-bottom: 5%;}
