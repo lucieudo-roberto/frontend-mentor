@@ -4,6 +4,62 @@ body {
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;
+	background-color: #cecece;
+}
+
+.main-box {width: 80%; background-color: red;}
+
+.article-box {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	background-color: #fff;
 }
-	
+
+.contents-box {display: block;width:60%; padding:0 10%;}
+	.logo-image-box {display:block; width:100%; margin-top:10%;}
+	.logo-image{width:33%;}
+	.header-box{display: block; width: 100%; margin-top: 20%;}
+	.head-title{font: 700 4vw/1 sans-serif; text-transform: uppercase;}
+	.marked-text{display:block; font-weight: 10; color: red;}
+	.product-desc{margin-top:5%; color: red; font: 200 1.1vw/1.4 sans-serif;}
+
+.form-box{ width: 100%; margin-top: 10%;}
+	.form-input-box{
+		margin-top: 5%;
+		position: relative;
+		width: 100%;
+	}
+	.form-input-email{
+		border: 2px solid orange;
+		border-radius: 20px;
+		width: 90%; outline:none; padding:3%;
+		font: 200 1vw/1 sans-serif;
+	}
+
+	.form-input-email:invalid {
+		border: 2px solid red;
+		background: transparent url('../images/icon-error.svg') 85% 50% /6% no-repeat;
+	}
+
+    .form-input-send {
+    	position: absolute;
+    	width: 17%;
+    	right: 2%;
+    	border-radius: 20px;
+    	padding: 3%;
+    	background: #f00 url('../images/icon-arrow.svg') 50% 50% /15% no-repeat;
+    }
+
+    .form-error-msg {
+    	display: block;
+    	width: 90%; margin: 2% 0;
+    	font: 200 1vw/1 sans-serif;
+    	color: red;
+    	margin-left: 1%;
+    }
+
+.aside-box{display: block; width:40%;}
+	.image-box{width: 100%;}
+	.aside-image {width: 100%; height: 100%;}

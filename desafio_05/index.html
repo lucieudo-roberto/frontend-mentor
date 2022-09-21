@@ -11,22 +11,23 @@
     <body>
         <main class="main-box">
             <article class="article-box">
-                
                 <section class="contents-box">
-                    <div class="logo-image-box"><img src="" alt="" class="logo-image"/></div>
+                    <div class="logo-image-box">
+                        <img src="images/logo.svg" alt="" class="logo-image"/>
+                    </div>
                     <header class="header-box">
-                        <h1 class="head-title"> <span class="marked-text">We're</span> coming soon </h1>
-                        <p clas="product-desc">
+                        <h1 class="head-title"> <span class="marked-text">We're</span> coming <br>soon </h1>
+                        <p class="product-desc">
                             Hello fellow shoppers! We're currently building our new 
                             fashion store. Add your email below to stay up-to-date 
                             with announcements and our launch deals.
                         </p>
                     </header>
 
-                    <form class="form-box">
+                    <form class="form-box" action="" method="">
                         <div class="form-input-box">
-                            <input class="form-input" type="text" name=""/>
-                            <input class="form-input" type="send" name=""/>
+                            <input class="form-input-email" type="email" name=""/>
+                            <input class="form-input-send" type="button" value=""/>
                         </div>
                         <span class="form-error-msg"> Please provide a valid email </span>
                     </form>
@@ -34,11 +35,11 @@
 
                 <aside class="aside-box">
                     <picture class="image-box">
-                        <source src="" class="aside-image"/>
-                        <source src="" class="aside-image"/>
+                        <source srcset="images/hero-mobile.jpg"  media="(max-width: 612px)"/>
+                        <source srcset="images/hero-desktop.jpg" media="(min-width: 613px)"/>
+                        <img class="aside-image" alt="" width="" height=""/>
                     </picture>
                 </aside>
-
             </article>
         </main>
     </body>
