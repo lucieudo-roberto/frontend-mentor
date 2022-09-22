@@ -1,33 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+:root {
+    --desatured-red:#ce9797;
+    --soft-red:#f96262;
+}
 body {
+    width: 100%;
 	min-height:100vh;
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;
-	background-color: #cecece;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
-.main-box {width: 80%; background-color: red;}
+.main-box {width: 80%; height: 100%;}
 
 .article-box {
+    position: relative;
 	width: 100%;
+	height: 100%;
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
-	background-color: #fff;
+	align-items: stretch;
 }
 
-.contents-box {display: block;width:60%; padding:0 10%;}
-	.logo-image-box {display:block; width:100%; margin-top:10%;}
+.logo-image-box {
+    width:60%;
+    position: absolute;
+    top: 6%; left: 0;
+    padding: 0 5%;
+    
+}
 	.logo-image{width:33%;}
-	.header-box{display: block; width: 100%; margin-top: 20%;}
-	.head-title{font: 700 4vw/1 sans-serif; text-transform: uppercase;}
-	.marked-text{display:block; font-weight: 10; color: red;}
-	.product-desc{margin-top:5%; color: red; font: 200 1.1vw/1.4 sans-serif;}
+	
+.contents-box {width:60%; padding:0 1%; padding: 0 5%; align-self: center;}
+	.header-box{width: 100%}
+	.head-title{font-weight:600; font-size: 4vw; text-transform: uppercase;}
+	.marked-text{display:block; font-weight: 300;}
+	.product-desc{color: red; font: 200 1.1vw/1.4 sans-serif; margin-top: 5%;}
 
-.form-box{ width: 100%; margin-top: 10%;}
+.form-box{ width: 100%;}
 	.form-input-box{
-		margin-top: 5%;
+		margin-top: 8%;
 		position: relative;
 		width: 100%;
 	}
@@ -35,7 +49,7 @@ body {
 		border: 2px solid orange;
 		border-radius: 20px;
 		width: 90%; outline:none; padding:3%;
-		font: 200 1vw/1 sans-serif;
+		font-weight:300; font-size:1vw;
 	}
 
 	.form-input-email:invalid {
@@ -46,20 +60,35 @@ body {
     .form-input-send {
     	position: absolute;
     	width: 17%;
-    	right: 2%;
-    	border-radius: 20px;
+    	right: 2%; top: -2%;
+    	border-radius: 30px;
+    	border: 1px solid #ee8c8c;
     	padding: 3%;
-    	background: #f00 url('../images/icon-arrow.svg') 50% 50% /15% no-repeat;
+    	background: url('../images/icon-arrow.svg') no-repeat 50% 50% /15%, linear-gradient(to right, #f8bfbf,#ee8c8c);
     }
 
     .form-error-msg {
     	display: block;
     	width: 90%; margin: 2% 0;
-    	font: 200 1vw/1 sans-serif;
+    	font-weight:300; font-size: 1vw;
     	color: red;
     	margin-left: 1%;
     }
 
-.aside-box{display: block; width:40%;}
+.aside-box{width:40%;}
 	.image-box{width: 100%;}
 	.aside-image {width: 100%; height: 100%;}
+
+@media(max-width: 612px) {
+    body{display: block;}
+    .main-box{width: 100%;}
+    .logo-image-box {width: 100%; position: relative; margin: 3% 0 4% 0;}
+    .aside-box {width: 100%; order: 1;}
+    
+    .contents-box{order: 2; width: 90%; margin: auto auto;}
+        .head-title {text-align: center; font-size: 4rem; margin: 10% 0 5% 0;}
+        .product-desc{text-align: center; font-size: 1.2rem;}
+        .form-input-email{padding: 4%; font-size: 1.3rem;}
+        .form-input-send{padding: 5% 10%; top: 2%;}
+        .form-error-msg {font-size: 1rem;}
+}
