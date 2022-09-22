@@ -75,7 +75,7 @@ body {
     .form-input-send {
     	position: absolute;
     	width: 17%;
-    	right: 2%; top: -2%;
+    	right: 2%; top: -1px;
     	border-radius: 30px;
     	border: 1px solid #ee8c8c;
     	padding: 3%;
