@@ -27,6 +27,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
+	background: rgba(252, 207, 207,.2) url('../images/bg-desktop.svg') 0 0 /60% 100% no-repeat;
 }
 
 .logo-image-box {
@@ -38,9 +39,13 @@ body {
 }
 	.logo-image{width:32%;}
 	
-.contents-box {width:60%; padding:0 1%; padding: 0 10%; align-self: center;}
+.contents-box {
+    width:60%; 
+    padding:0 10%;
+    align-self: center;
+}
 	.header-box{width: 100%}
-	.head-title{font-weight:600; font-size: 4vw; text-transform: uppercase;}
+	.head-title{font-weight:600; font-size: 4vw; text-transform: uppercase; color:#413a3a;}
 	.marked-text{display:block; font-weight: 300; color: var(--desatured-red);}
 	.product-desc{width: 100%; font-weight: 400; font-size: 1.1vw; margin-top: 5%; color: var(--desatured-red);}
 
@@ -55,13 +60,14 @@ body {
 		border-radius: 20px;
 		width: 90%; outline:none; padding:3%;
 		font-weight:400; font-size:1vw;
-		color: #121212;
+		color: #413a3a;
+		background-color: rgba(252, 207, 207,.1);
 	}
     .form-input-email::placeholder {color: var(--desatured-red);}
     
 	.form-input-email:invalid {
 		border: 2px solid var(--soft-red);
-		background: transparent url('../images/icon-error.svg') 80% 50% /6% no-repeat;
+		background: rgba(252, 207, 207,.1) url('../images/icon-error.svg') 80% 50% /6% no-repeat;
 	}
 	
 	.form-input-email:invalid ~ .form-error-msg {visibility: visible;}
@@ -94,7 +100,12 @@ body {
 	.aside-image {width: 100%; height: 100%;}
 
 @media(max-width: 612px) {
-    body{display: block;}
+    body{display: block;
+        background-color: rgba(252, 207, 207,.1);
+    }
+    .article-box {
+        background: none;
+    }
     .main-box{width: 100%; box-shadow: none;}
     .logo-image-box {width: 100%; position: relative; margin: 3% 0 4% 0;}
     .aside-box {width: 100%; order: 1;}
