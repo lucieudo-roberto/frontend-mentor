@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
 :root {
     --desatured-red:#ce9797;
     --soft-red:#f96262;
 }
+
 body {
     width: 100%;
 	min-height:100vh;
@@ -13,7 +15,10 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
-.main-box {width: 80%; height: 100%;}
+.main-box {
+    width: 80%; height: 100%;
+    box-shadow: 1px 3px 10px 4px rgba(1,1,1,.1);
+}
 
 .article-box {
     position: relative;
@@ -27,17 +32,17 @@ body {
 .logo-image-box {
     width:60%;
     position: absolute;
-    top: 6%; left: 0;
-    padding: 0 5%;
+    top: 7%; left: 0;
+    padding: 0 10%;
     
 }
-	.logo-image{width:33%;}
+	.logo-image{width:32%;}
 	
-.contents-box {width:60%; padding:0 1%; padding: 0 5%; align-self: center;}
+.contents-box {width:60%; padding:0 1%; padding: 0 10%; align-self: center;}
 	.header-box{width: 100%}
 	.head-title{font-weight:600; font-size: 4vw; text-transform: uppercase;}
-	.marked-text{display:block; font-weight: 300;}
-	.product-desc{color: red; font: 200 1.1vw/1.4 sans-serif; margin-top: 5%;}
+	.marked-text{display:block; font-weight: 300; color: var(--desatured-red);}
+	.product-desc{width: 100%; font-weight: 400; font-size: 1.1vw; margin-top: 5%; color: var(--desatured-red);}
 
 .form-box{ width: 100%;}
 	.form-input-box{
@@ -49,13 +54,17 @@ body {
 		border: 2px solid orange;
 		border-radius: 20px;
 		width: 90%; outline:none; padding:3%;
-		font-weight:300; font-size:1vw;
+		font-weight:400; font-size:1vw;
+		color: #121212;
 	}
-
+    .form-input-email::placeholder {color: var(--desatured-red);}
+    
 	.form-input-email:invalid {
-		border: 2px solid red;
-		background: transparent url('../images/icon-error.svg') 85% 50% /6% no-repeat;
+		border: 2px solid var(--soft-red);
+		background: transparent url('../images/icon-error.svg') 80% 50% /6% no-repeat;
 	}
+	
+	.form-input-email:invalid ~ .form-error-msg {visibility: visible;}
 
     .form-input-send {
     	position: absolute;
@@ -65,13 +74,18 @@ body {
     	border: 1px solid #ee8c8c;
     	padding: 3%;
     	background: url('../images/icon-arrow.svg') no-repeat 50% 50% /15%, linear-gradient(to right, #f8bfbf,#ee8c8c);
+    	box-shadow: 1px 10px 13px 3px rgba(238,140,140,.2);
     }
-
+    .form-input-send:hover {
+        background: url('../images/icon-arrow.svg') no-repeat 50% 50% /15%, linear-gradient(to right, #f8bfbf, #ee8c8c);
+        box-shadow: 1px 10px 13px 3px rgba(238, 140, 140, .3);
+    }
     .form-error-msg {
     	display: block;
+    	visibility: hidden;
     	width: 90%; margin: 2% 0;
-    	font-weight:300; font-size: 1vw;
-    	color: red;
+    	font-weight:400; font-size: 1vw;
+    	color: var(--soft-red);
     	margin-left: 1%;
     }
 
@@ -81,14 +95,14 @@ body {
 
 @media(max-width: 612px) {
     body{display: block;}
-    .main-box{width: 100%;}
+    .main-box{width: 100%; box-shadow: none;}
     .logo-image-box {width: 100%; position: relative; margin: 3% 0 4% 0;}
     .aside-box {width: 100%; order: 1;}
     
-    .contents-box{order: 2; width: 90%; margin: auto auto;}
+    .contents-box{order: 2; width: 100%; margin: auto auto; padding: 0 7%}
         .head-title {text-align: center; font-size: 4rem; margin: 10% 0 5% 0;}
-        .product-desc{text-align: center; font-size: 1.2rem;}
-        .form-input-email{padding: 4%; font-size: 1.3rem;}
-        .form-input-send{padding: 5% 10%; top: 2%;}
+        .product-desc{text-align: center; font-size: 1.1rem;}
+        .form-input-email{padding: 4%; font-size: 1.2rem;}
+        .form-input-send{padding: 5% 10%; top: -1%;}
         .form-error-msg {font-size: 1rem;}
 }
