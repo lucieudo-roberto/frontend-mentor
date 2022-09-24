@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
+body {
+    background: url('../images/bg-desktop.svg') no-repeat 0 0 /100% 50%;
+}
+
 .main-box {
 	position: relative;
 	display: flex;
+	height: 100%;
 	flex-wrap: wrap;
 }
 
@@ -74,3 +79,32 @@
 
 .aside-box {width: 40%; order: 2; position: absolute; right: 0;}
 .aside-image {width: 100%;}
+
+@media(max-width: 512px) {
+    .logo-box {order: 1;} .header-box{order: 3;} .form-box {order: 4;}
+    .logo-box, .header-box, .form-box { width:100%; padding:0 10%; }
+    .logo-image {width: 35%; margin: 4% 0 7% 0;}
+    .head-title{
+        width: 100%; 
+        text-align: center;
+        font-size: 3rem;
+        margin: 20% 0 8% 0;
+    }
+    .product-desc {
+        width: 100%;
+        text-align: center;
+        font-size: 1.3rem;
+        margin: 0 0;
+    }
+    .form-input-email {
+        font-size: 1.2rem;
+        padding: 1.2rem;
+    }
+    
+    .form-input-send {
+        padding: 6vw 8vw;
+    }
+    .form-error-msg {font-size: 1.2rem;}
+    .aside-box {width: 100%; order: 2; position: relative;}
+    .aside-image {width: 100%;}
+}
