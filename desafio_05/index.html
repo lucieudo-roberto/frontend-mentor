@@ -10,37 +10,32 @@
 	</head>
     <body>
         <main class="main-box">
-            <article class="article-box">
-                <div class="logo-image-box">
-                    <img src="images/logo.svg" alt="" class="logo-image" />
+            <div class="logo-box"><img src="images/logo.svg" alt="" class="logo-image"/></div>
+                
+            <header class="header-box">
+                <h1 class="head-title"><span class="marked-text">We're<br></span> coming <br>soon </h1>
+                <p class="product-desc">
+                    Hello fellow shoppers! We're currently building our new 
+                    fashion store. Add your email below to stay up-to-date 
+                    with announcements and our launch deals.
+                </p>
+            </header>
+
+            <form class="form-box">
+                <div class="form-input-box">
+                    <input class="form-input-email" type="email" placeholder="Email Addres"/>
+                    <button class="form-input-send"> </button>
+                    <span class="form-error-msg"> Please provide a valid email </span>
                 </div>
-                <section class="contents-box">
-                    <header class="header-box">
-                        <h1 class="head-title"><span class="marked-text">We're</span> coming <br>soon </h1>
-                        <p class="product-desc">
-                            Hello fellow shoppers! We're currently building our new 
-                            fashion store. Add your email below to stay up-to-date 
-                            with announcements and our launch deals.
-                        </p>
-                    </header>
+            </form>
 
-                    <form class="form-box">
-                        <div class="form-input-box">
-                            <input class="form-input-email" type="email" placeholder="Email Addres"/>
-                            <input class="form-input-send" type="button"/>
-                            <span class="form-error-msg"> Please provide a valid email </span>
-                        </div>
-                    </form>
-                </section>
-
-                <aside class="aside-box">
-                    <picture class="image-box">
-                        <source srcset="images/hero-mobile.jpg"  media="(max-width: 612px)"/>
-                        <source srcset="images/hero-desktop.jpg" media="(min-width: 613px)"/>
-                        <img src="images/hero-mobile.jpg" class="aside-image" alt="picture of woman"/>
-                    </picture>
-                </aside>
-            </article>
+            <aside class="aside-box">
+                <picture class="image-box">
+                    <source srcset="images/hero-mobile.jpg"  media="(max-width: 612px)"/>
+                    <source srcset="images/hero-desktop.jpg" media="(min-width: 613px)"/>
+                    <img src="images/hero-mobile.jpg" class="aside-image" alt="picture of woman"/>
+                </picture>
+            </aside>
         </main>
     </body>
 </html>

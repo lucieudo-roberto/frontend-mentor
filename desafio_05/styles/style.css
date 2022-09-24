@@ -1,119 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
-:root {
-    --desatured-red:#ce9797;
-    --soft-red:#f96262;
-}
-
-body {
-    width: 100%;
-	min-height:100vh;
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-	align-items:center;
-	font-family: 'Josefin Sans', sans-serif;
-}
-
 .main-box {
-    width: 80%; height: 100%;
-    box-shadow: 1px 3px 10px 4px rgba(1,1,1,.1);
-}
-
-.article-box {
-    position: relative;
-	width: 100%;
-	height: 100%;
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: stretch;
-	background: rgba(252, 207, 207,.2) url('../images/bg-desktop.svg') 0 0 /60% 100% no-repeat;
 }
 
-.logo-image-box {
-    width:60%;
+.logo-box, .header-box, .form-box { width:60%; padding:0 10%; }
+.logo-image {width: 32%; margin: 9% 0 25% 0;}
+
+.head-title {
+	font: 600 4vw/1 'josefin Sans';
+	text-transform:uppercase; 
+	letter-spacing: 23px;
+	color:#413a3a;
+}
+.marked-text { font-weight: 300; color: #ce9797; }
+
+.product-desc {
+	width: 90%;
+	font: 400 1.2vw/1.4 'josefin Sans';
+	margin-top: 5%; 
+	color: #ce9797;
+}
+
+.form-input-box {
+	margin-top: 8%;
+	position: relative;
+}
+
+.form-input-email{
+	border: 2px solid #cecece;
+	border-radius: 24px;
+	width: 90%; outline:none; padding:3%;
+	font: 400 1.3vw/1 'josefin Sans';
+	color: #413a3a;
+	background: transparent;
+}
+
+.form-input-email:invalid {
+	border: 2px solid #f96262;
+	background:#fccfcf url('../images/icon-error.svg') 80% 50% /5.5% no-repeat;
+}
+
+.form-input-email::placeholder {color:#ce9797;}
+.form-input-email:invalid ~ .form-error-msg {visibility: visible;}
+
+.form-input-send {
     position: absolute;
-    top: 7%; left: 0;
-    padding: 0 10%;
-    
+    width: 17%;
+    right: 2%; top: -.2vw;
+    border-radius: 30px;
+    border: 1px solid #ee8c8c;
+    padding: 2vw;
+    cursor: pointer;
+    background: url('../images/icon-arrow.svg') no-repeat 50% 50% /15%, linear-gradient(to right, #f8bfbf,#ee8c8c);
+    box-shadow: 1px 10px 13px 3px #f8bfbf;
 }
-	.logo-image{width:32%;}
-	
-.contents-box {
-    width:60%; 
-    padding:0 10%;
-    align-self: center;
+
+.form-input-send:hover {
+    background: url('../images/icon-arrow.svg') no-repeat 50% 50% /15%, linear-gradient(to right,#f8bfbf, #ee8c8c);
+    box-shadow: 1px 10px 13px 3px #f8bfbf;
 }
-	.header-box{width: 100%}
-	.head-title{font-weight:600; font-size: 4vw; text-transform: uppercase; color:#413a3a;}
-	.marked-text{display:block; font-weight: 300; color: var(--desatured-red);}
-	.product-desc{width: 100%; font-weight: 400; font-size: 1.1vw; margin-top: 5%; color: var(--desatured-red);}
 
-.form-box{ width: 100%;}
-	.form-input-box{
-		margin-top: 8%;
-		position: relative;
-		width: 100%;
-	}
-	.form-input-email{
-		border: 2px solid orange;
-		border-radius: 20px;
-		width: 90%; outline:none; padding:3%;
-		font-weight:400; font-size:1vw;
-		color: #413a3a;
-		background-color: rgba(252, 207, 207,.1);
-	}
-    .form-input-email::placeholder {color: var(--desatured-red);}
-    
-	.form-input-email:invalid {
-		border: 2px solid var(--soft-red);
-		background: rgba(252, 207, 207,.1) url('../images/icon-error.svg') 80% 50% /6% no-repeat;
-	}
-	
-	.form-input-email:invalid ~ .form-error-msg {visibility: visible;}
+.form-error-msg {
+    display: block;
+    visibility: hidden;
+    width: 90%; margin: 2% 0;
+	font: 400 1vw/1 'josefin Sans';
+    color: #f96262;
+    margin-left: 1%;
+} 
 
-    .form-input-send {
-    	position: absolute;
-    	width: 17%;
-    	right: 2%; top: -1px;
-    	border-radius: 30px;
-    	border: 1px solid #ee8c8c;
-    	padding: 3%;
-    	background: url('../images/icon-arrow.svg') no-repeat 50% 50% /15%, linear-gradient(to right, #f8bfbf,#ee8c8c);
-    	box-shadow: 1px 10px 13px 3px rgba(238,140,140,.2);
-    }
-    .form-input-send:hover {
-        background: url('../images/icon-arrow.svg') no-repeat 50% 50% /15%, linear-gradient(to right, #f8bfbf, #ee8c8c);
-        box-shadow: 1px 10px 13px 3px rgba(238, 140, 140, .3);
-    }
-    .form-error-msg {
-    	display: block;
-    	visibility: hidden;
-    	width: 90%; margin: 2% 0;
-    	font-weight:400; font-size: 1vw;
-    	color: var(--soft-red);
-    	margin-left: 1%;
-    }
-
-.aside-box{width:40%;}
-	.image-box{width: 100%;}
-	.aside-image {width: 100%; height: 100%;}
-
-@media(max-width: 612px) {
-    body{display: block;
-        background-color: rgba(252, 207, 207,.1);
-    }
-    .article-box {
-        background: none;
-    }
-    .main-box{width: 100%; box-shadow: none;}
-    .logo-image-box {width: 100%; position: relative; margin: 3% 0 4% 0;}
-    .aside-box {width: 100%; order: 1;}
-    
-    .contents-box{order: 2; width: 100%; margin: auto auto; padding: 0 7%}
-        .head-title {text-align: center; font-size: 4rem; margin: 10% 0 5% 0;}
-        .product-desc{text-align: center; font-size: 1.1rem;}
-        .form-input-email{padding: 4%; font-size: 1.2rem;}
-        .form-input-send{padding: 5% 10%; top: -1%;}
-        .form-error-msg {font-size: 1rem;}
-}
+.aside-box {width: 40%; order: 2; position: absolute; right: 0;}
+.aside-image {width: 100%;}
