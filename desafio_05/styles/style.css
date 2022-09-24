@@ -6,14 +6,13 @@ body {
 	align-items: center;
 	min-height: 100vh;
     width: 100%;
-    background: red;
 }
 
 .main-box {
 	position: relative;
 	display: flex;
 	height: min(1000px,100vh);
-	width: min(1440px,100%);
+	width: min(1500px,100%);
 	flex-wrap: wrap;
 	background: url('../images/bg-desktop.svg') no-repeat 0 0 /60% 100%, linear-gradient(to right, #fefefe,#f4ebeb);
 }
