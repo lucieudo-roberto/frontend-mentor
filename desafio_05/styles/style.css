@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
 body {
-    background: url('../images/bg-desktop.svg') no-repeat 0 0 /100% 50%;
+	min-height: 100vh;
+    width: 100%;
 }
 
 .main-box {
 	position: relative;
 	display: flex;
-	height: 100%;
+	height: 100vh;
+	width: min(2560px,100%);
 	flex-wrap: wrap;
+	background: url('../images/bg-desktop.svg') no-repeat 0 0 /60% 100%, linear-gradient(to right, #fefefe,#f4ebeb);
 }
 
 .logo-box, .header-box, .form-box { width:60%; padding:0 10%; }
@@ -56,16 +59,16 @@ body {
     width: 17%;
     right: 2%; top: -.2vw;
     border-radius: 30px;
-    border: 1px solid #ee8c8c;
+    border: 1px solid #f8bfbf;
     padding: 2vw;
     cursor: pointer;
     background: url('../images/icon-arrow.svg') no-repeat 50% 50% /15%, linear-gradient(to right, #f8bfbf,#ee8c8c);
-    box-shadow: 1px 10px 13px 3px #f8bfbf;
+  
 }
 
 .form-input-send:hover {
-    background: url('../images/icon-arrow.svg') no-repeat 50% 50% /15%, linear-gradient(to right,#f8bfbf, #ee8c8c);
-    box-shadow: 1px 10px 13px 3px #f8bfbf;
+	border: 1px solid #f4e1e1;
+    background: url('../images/icon-arrow.svg') no-repeat 50% 50% /15%, linear-gradient(to right,#f4e1e1, #e2bebe);
 }
 
 .form-error-msg {
@@ -78,9 +81,10 @@ body {
 } 
 
 .aside-box {width: 40%; order: 2; position: absolute; right: 0;}
-.aside-image {width: 100%;}
+.aside-image {width: 100%; height: 100vh;}
 
 @media(max-width: 512px) {
+	.main-box{background-image: none;}
     .logo-box {order: 1;} .header-box{order: 3;} .form-box {order: 4;}
     .logo-box, .header-box, .form-box { width:100%; padding:0 10%; }
     .logo-image {width: 35%; margin: 4% 0 7% 0;}
@@ -106,5 +110,5 @@ body {
     }
     .form-error-msg {font-size: 1.2rem;}
     .aside-box {width: 100%; order: 2; position: relative;}
-    .aside-image {width: 100%;}
+    .aside-image {width: 100%; height: auto;}
 }
