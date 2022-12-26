@@ -14,18 +14,18 @@ Obrigado por visitar!
 
 # 
 
-# 1° Desafio - card perfume
+## card perfume
 ![screenshot versão Desktot](imagens/ch_01.jpg)
 [ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_01/)
 #
-# 2° Desafio - Interactive card details form
+## Interactive card details form
 ![screenshot versão Desktot](imagens/ch_02.jpg)
 [ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_01/)
 #
-# 3° Desafio - Four card feature section
+## Four card feature section
 ![screenshot versão Desktot](imagens/ch_03.jpg)
 [ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_03/)
 
-# 4° Desafio - Single Price Grid Component
+## Single Price Grid Component
 ![screenshot versão Desktot](imagens/ch_04.jpg)
 [ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_04/)
