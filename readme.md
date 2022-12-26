@@ -1,5 +1,5 @@
 
-# Olá, &#128075;
+# Olá, &#128587;
 #
 
 Este é o repositório dos meus projetos realizados através do site Front-End Mentor.
@@ -10,7 +10,7 @@ Aqui você encontrará os projetos que completei até o momento, com o código f
 
 Espero que esses projetos possam servir como um exemplo do meu trabalho e como uma forma de compartilhar meus conhecimentos e experiências.
 
-Obrigado por visitar!
+Obrigado por visitar! &#128582;
 
 # 
 
