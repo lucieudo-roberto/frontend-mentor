@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{padding: 0;margin: 0;text-decoration: none;box-sizing: border-box;}
+
+body {
+    background-color: #e0e8ff;
+    background-image: url('../res/img_04.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    font-size: 16px;
+}
+
+section.card {
+	box-shadow: 0px 7px 7px #BDC8EE;
+	width: min(450px,90%);
+	background-color: #fefefe;
+	overflow: hidden;
+	margin: 7% auto auto;
+	border-radius: 20px;
+}
+
+section.card header#cheader {width: 100%;}
+section.card header#cheader img{width: 100%;}
+section.card header#cheader h1{
+	width: 100%;
+	text-align: center;
+	font: 900 1.8rem/1 'Red Hat Display', sans-serif;
+	margin: 10% auto 0  auto;
+    color: #1f2f56;
+}
+section.card header#cheader p {
+	width: 75%;
+	font: 700 1rem/1.6 'Red Hat Display', sans-serif;
+	margin: 5% auto 0 auto;
+	text-align: center;
+    color: #7280a7;
+}
+
+section.card div#cbody {
+	display: grid;
+	grid-template-columns: 20% 50% 30%;
+	width: 77%;
+	margin: 3.4% auto 0 auto;
+	border-radius: 10px;
+	padding:  5%;
+    background-color: #f5f7ff;
+}
+section.card div#cbody img{
+    width: 75%; 
+    margin-top: 15%;
+    vertical-align: middle;
+    cursor: pointer;
+}
+section.card div#cbody p{
+	text-align: left;
+	width: 98%;
+	font: 900 1rem/1.7 'Red Hat Display', sans-serif;
+    color: #1f2f56;
+    padding-left: 2%;
+    cursor: pointer;
+    margin-top: 3%;
+}
+section.card div#cbody p span{
+	font: 700 1rem/1.5 'Red Hat Display', sans-serif;
+	color: #7280a7;
+	padding-left: 2%;
+    cursor: pointer;
+}
+section.card div#cbody a{
+	display: block;
+	margin: auto auto;
+	text-align: right;
+	width: 100%;
+	font: 700 0.9rem/1.5 'Red Hat Display', sans-serif;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+section.card .buttons {
+	display: block;
+    width: 78%;
+    border-radius: 10px;
+	margin: 7% auto 0 auto;
+	padding:  2.5% 0;
+	border: 0.8px solid #4032e2;
+	font: 700 1rem/1.5 'Red Hat Display', sans-serif;
+	background-color: #3829e0;
+    color: #f4f4f4;
+    box-shadow: 0px 6px 5px rgba(56, 41, 224,.3);
+    cursor: pointer;
+}
+
+section.card .buttons:last-child{
+	background: transparent;
+	margin: 4% auto 8% auto;
+	border: none;
+    color: #7280a7;
+    box-shadow: none;
+}
+
+section.card .bnt-top:hover {background-color: #766af2; border:  1px solid #766af2;}
+section.card .bnt-bmt:hover {color: #000;}
