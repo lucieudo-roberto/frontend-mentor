@@ -15,17 +15,21 @@ Obrigado por visitar! &#128582;
 # 
 
 ## card perfume
-![screenshot versão Desktot](imagens/ch_01.jpg)
+![screenshot versão Desktop](imagens/ch_01.png)
 [ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_01/)
 #
 ## Interactive card details form
-![screenshot versão Desktot](imagens/ch_02.jpg)
+![screenshot versão Desktop](imagens/ch_02.png)
 [ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_01/)
 #
 ## Four card feature section
-![screenshot versão Desktot](imagens/ch_03.jpg)
+![screenshot versão Desktop](imagens/ch_03.png)
 [ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_03/)
 
 ## Single Price Grid Component
-![screenshot versão Desktot](imagens/ch_04.jpg)
+![screenshot versão Desktop](imagens/ch_04.png)
 [ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_04/)
+
+##  Base Apparel coming soon page
+![screenshot versão Desktop](imagens/ch_05.png)
+[ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_05/)

@@ -43,7 +43,7 @@ body {
 .form-input-email{
 	border: 2px solid #cecece;
 	border-radius: 24px;
-	width: 90%; outline:none; padding:3%;
+	width: 90%; outline:none; padding: 15px;
 	font: 400 1.3vw/1 'josefin Sans';
 	color: #413a3a;
 	background: transparent;
@@ -59,11 +59,11 @@ body {
 
 .form-input-send {
     position: absolute;
-    width: 17%;
-    right: 2%; top: -.2vw;
+    width: 5rem;
+    right: 5%; top: -2px;
     border-radius: 30px;
     border: 1px solid #f8bfbf;
-    padding: 2vw;
+    padding: 1.5rem;
     cursor: pointer;
     background: url('../images/icon-arrow.svg') no-repeat 50% 50% /15%, linear-gradient(to right, #f8bfbf,#ee8c8c);
   
@@ -111,13 +111,12 @@ body {
     }
     .form-input-email {
         font-size: 1.2rem;
-        padding: 1.2rem;
     }
     
     .form-input-send {
         padding: 6vw 8vw;
     }
     .form-error-msg {font-size: 1.2rem;}
-    .aside-box {width: 100%; order: 2; position: relative;}
+    .aside-box {width: 100%; order: 2; position: relative; height: auto;}
     .aside-image {width: 100%; height: auto;}
 }
