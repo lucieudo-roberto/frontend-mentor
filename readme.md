@@ -28,30 +28,31 @@ Obrigado por visitar! &#128582;
 
 ## Single Price Grid Component
 ![screenshot versão Desktop](imagens/ch_04.png)
-[ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_04/)
+> [ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_04/)
 
 ##  Base Apparel coming soon page
 ![screenshot versão Desktop](imagens/ch_05.png)
-[ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_05/)
+> [ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_05/)
 
-# Esses são os primeiros desafios que fiz, Por isso não estão no mesmo nível que os à cima! 
+#
+## Esses são os primeiros desafios que fiz, Por isso não estão no mesmo nível que os à cima! 
 
 ## Order summary card 
 ![screenshot versão Desktop](imagens/ch_06.png)
-[ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_06/)
+> [ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_06/)
 
 ## QR code component
 ![screenshot versão Desktop](imagens/ch_07.png)
-[ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_07/)
+> [ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_07/)
 
 ## 3-column preview card component
 ![screenshot versão Desktop](imagens/ch_08.png)
-[ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_08/)
+> [ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_08/)
 
 ## etheriun card component
 ![screenshot versão Desktop](imagens/ch_09.png)
-[ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_09/)
+> [ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_09/)
 
 ## Profile card component
 ![screenshot versão Desktop](imagens/ch_10.png)
-[ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_10/)
+> [ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_10/)
