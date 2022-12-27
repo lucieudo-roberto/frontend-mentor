@@ -20,7 +20,7 @@ Obrigado por visitar! &#128582;
 #
 ## Interactive card details form
 ![screenshot versão Desktop](imagens/ch_02.png)
-[ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_01/)
+[ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_02/)
 #
 ## Four card feature section
 ![screenshot versão Desktop](imagens/ch_03.png)
