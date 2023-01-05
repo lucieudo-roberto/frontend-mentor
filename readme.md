@@ -35,7 +35,7 @@ Obrigado por visitar! &#128582;
 > [ live view ](https://lucieudo-roberto.github.io/frontend-mentor/desafio_05/)
 
 #
-## Esses são os meus primeiros desafios que fiz, Por isso não estão no mesmo nível que os à cima! 
+## Esses são os primeiros desafios que fiz, Por isso não estão no mesmo nível que os à cima! 
 
 ## Order summary card 
 ![screenshot versão Desktop](imagens/ch_06.png)
